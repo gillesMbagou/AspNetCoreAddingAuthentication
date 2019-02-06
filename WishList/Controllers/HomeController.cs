@@ -4,6 +4,7 @@ namespace WishList.Controllers
 {
     public class HomeController : Controller
     {
+	
         public IActionResult Index()
         {
             return View("Index");
@@ -13,5 +14,9 @@ namespace WishList.Controllers
         {
             return View("Error");
         }
+	public IActionResult Acceuil()
+	{
+		return View("Index");
+	}
     }
 }
